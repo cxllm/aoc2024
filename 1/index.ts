@@ -1,10 +1,10 @@
 import fs from "fs";
 
-let file: Array<string> = fs
+let file: string[] = fs
 	.readFileSync(`${__dirname}/input.txt`, "utf-8")
 	.split("\r\n");
-let left: Array<number> = [];
-let right: Array<number> = [];
+let left: number[] = [];
+let right: number[] = [];
 // Parsing the input file
 for (const line of file) {
 	let split = line.split("   ");
@@ -17,7 +17,7 @@ for (const line of file) {
 left = left.sort();
 right = right.sort();
 
-let distances: Array<number> = [];
+let distances: number[] = [];
 for (const item in left) distances.push(Math.abs(left[item] - right[item]));
 
 console.log(

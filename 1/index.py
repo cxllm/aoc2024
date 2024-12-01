@@ -16,11 +16,11 @@ right.sort()
 # Nearly forgot this abs function (thank you debugging)
 distances = [abs(left[i] - right[i]) for i in range(len(left))]
 
-print("Part 1: ", sum(distances))
+print("Part 1:", sum(distances))
 
 # Part 2
 similarity_score = 0
 for item in left:
     similarity_score += item * right.count(item)
 
-print("Part 2: ", similarity_score)
+print("Part 2:", similarity_score)
