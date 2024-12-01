@@ -1,0 +1,15 @@
+{
+	"name": "advent-of-code-2024",
+	"version": "2.0.2.4",
+	"description": "AOC 2024",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@types/node": "^22.10.1"
+	}
+}

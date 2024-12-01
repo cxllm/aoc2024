@@ -6,7 +6,7 @@ with open("./input.txt", "r") as file:
     for line in file.readlines():
         line = line.strip()
         # the file had a lot of spaces
-        l, _, _, r = line.split(" ")
+        l, r = line.split("   ")
         left.append(int(l))
         right.append(int(r))
 
